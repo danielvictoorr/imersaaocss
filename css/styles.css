@@ -40,6 +40,7 @@ header{
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
   }
   
 .menu ul{
@@ -55,6 +56,13 @@ header{
 .menu a{
   display: block;
   padding: 10px 20px;
+  transition: background-color 1s, color 1s;
+}
+
+.menu a:active,
+.menu a:hover{
+  background-color: teal;
+  color: whitesmoke;
 }
   
 a{
@@ -66,6 +74,30 @@ a{
 a:hover{
     text-decoration:underline;
   }
+
+.titulo{
+  transform: scale(0.2) translateY(25vh);
+  opacity: 0;
+
+  animation:  1s linear 2s animacaoTitulo forwards;
+
+}
+
+@keyframes animacaoTitulo{
+
+  from{
+    transform: scale(0.2) translateY(25vh);
+    opacity: 0;
+
+  }
+
+  to{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+
+  }
+
+}
   
 .site-subtitle,
 .site-title{
@@ -83,11 +115,13 @@ a:hover{
     font-family: 'Cinzel', serif;
   }
 
+.contato,  
 .portifolio{
   padding: 2em;
-  height: 100vh;
+  min-height: 100vh;
 }
 
+.contato h2,
 .portifolio h2{
   font-family: 'Roboto Mono', monospace;
   color: whitesmoke;
@@ -128,6 +162,12 @@ a:hover{
   height: 180px;
   width: 240px;
   object-fit: cover;
+  transition: transform 500ms;
+ 
+}
+
+.img-portfolio:hover{
+   transform: scale(1.25) rotate(-2deg);
 }
 
 @media(min-width: 1200px ){
@@ -138,6 +178,23 @@ a:hover{
     object-fit: cover;
   }
 
+}
+
+.contato .icons{
+  text-align: center;
+}
+
+.contato a{
+  color: whitesmoke;
+  font-size: 5em;
+  transition: text-shadow 1s;
+
+}
+
+.contato a:active,
+.contato a:hover{
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255,255,255, 0.6);
 }
 
   
