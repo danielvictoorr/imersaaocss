@@ -162,17 +162,16 @@ a:hover{
 .sobre .avatar{
   float: right;
   margin-left: 2em;
+  clip-path: circle(50% at 50% 50%);
+  
 }
 
-.sobre .avatar img{
-  border-radius: 50%;
-}
+
 
 
 .portifolio .grid{
   display: grid;
   gap: 2em;
-  grid-template-columns: 240px;
  
 }
 
@@ -189,7 +188,7 @@ a:hover{
     grid-template-columns: 260px 260px 260px;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 4em - 48px - 1.5em);
+    height: calc(100vh - 8em - 48px );
   
   }
 
@@ -222,7 +221,8 @@ a:hover{
 }
 
 .flip-card{
-  perspective: 450px;
+  height: 180px;
+  perspective: 1000px;
 
 }
 
