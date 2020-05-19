@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="menu">
-          <ul>
+          <ul class="container">
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#portifolio">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
@@ -22,35 +22,78 @@
         
         <div class="titulo">
           <h1 class="site-title">Daniel Victor</h1>
-          <h2 class="site-subtitle">frontend web developer</h2>       
+          <h2 class="site-subtitle">front-end web developer</h2>       
         </div>
 
       </header>
-      <section class="portifolio" id="portifolio">
+
+      <section class="sobre container" id="sobre">
+
+        <h2>Sobre</h2>
+
+        <figure class="avatar">
+          <img src="https://pbs.twimg.com/profile_images/1246620835319894017/ZWptde0__400x400.jpg" alt="Daniel Victor">
+        </figure>
+
+        
+
+        <p>Me chamo Daniel, sou um apaixonado por tecnologia, robótica e programação. Sou técnico em Informatica formado no IFNMG-campus Januária e atual graduando Engenharia de Controle e Automação no CEFET-MG campus Leopoldina-MG</p>
+
+        <p>Sempre gostei demais de programação web principalmente front-end passei muito tempo parado porem estou voltando a mexer com esse mundo incrivel que é o mundo do front-end. Graças ao pessoal da alura pude voltar a rever muitos conceitos que a muito tempo não via e também conceitos novos que eu nunca tinha visto, então só tenho a agradecer a toda galera da Alura que promoveu esse workshop sobre Css</p>
+
+        <p>Este site foi contruído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da alura</a> ;) </p>
+      </section>
+
+
+
+      <section class="portifolio container" id="portifolio">
         <h2>Projetos Pessoais</h2>
 
         <div class="grid">
-          <figure>
-            <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg" alt="eCommerce">
-            <figcaption>NRL</figcaption>
-          </figure>
-          <figure>
-            <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
-            <figcaption>Diretótio Academico</figcaption>
-          </figure>
-          <figure>
-            <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-            <figcaption>Web design</figcaption>
-          </figure>
-          <figure>
-            <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
-            <figcaption>Mobile Lerning</figcaption>
-          </figure>
+          
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="img/nrl.jpg" alt="Nucleo de Robotica">
+                <figcaption>NRL</figcaption>
+              </figure>
+              <div class="card-back">Sou da área de programação no NRL</div>
+          </div>
+        </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="img/da.jpg" alt="Diretótio Academico">
+                <figcaption>Diretótio Academico</figcaption>
+              </figure>
+              <div class="card-back">Sou diretor de patrimônio no DA-ENCAUT</div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+                <figure class="card-front">
+                  <img class="img-portfolio" src="img/web.jpeg" alt="Web design">
+                  <figcaption>Web design</figcaption>
+              </figure>
+              <div class="card-back">Apaixonado por webdesign</div>
+          </div>
+          </div>
+          
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg" alt="Projetos pessoais">
+                <figcaption>Mobile Lerning</figcaption>
+              </figure>
+              <div class="card-back">Curioso do mundo de Mobile Lerning</div>
+            </div>
         </div>
         
       </section>
       
-    <section class="contato" id="contato">
+    <section class="contato container" id="contato">
 
       <h2>Contato</h2>
       <div class="grid icons">
